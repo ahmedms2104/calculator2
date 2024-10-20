@@ -1,18 +1,18 @@
-using System;
+﻿using System;
 
 class Program
 {
     static void Main()
     {
         // إدخال الأرقام من المستخدم
-        Console.Write("أدخل الرقم الأول: ");
+        Console.Write("num1: ");
         double num1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.Write("أدخل الرقم الثاني: ");
+        Console.Write("num2: ");
         double num2 = Convert.ToDouble(Console.ReadLine());
 
         // إدخال العملية
-        Console.Write("اختر العملية (+, -, *, /): ");
+        Console.Write("select op(+, -, *, /): ");
         string operation = Console.ReadLine();
 
         double result;
@@ -34,12 +34,12 @@ class Program
                     result = num1 / num2;
                 else
                 {
-                    Console.WriteLine("خطأ: لا يمكن القسمة على الصفر");
+                    Console.WriteLine("error 0");
                     return;
                 }
                 break;
             default:
-                Console.WriteLine("عملية غير صالحة");
+                Console.WriteLine("error");
                 return;
         }
 
